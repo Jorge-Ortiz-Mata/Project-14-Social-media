@@ -1,0 +1,48 @@
+<header class="header"> 
+    <nav class="navbar">   
+        <ul class="primaryMenu">
+            <li class="liOption">
+                <%= link_to "Home", root_path, class: "linkText" %>
+            </li>
+            <li class="liOption">
+                <%= link_to "About", home_about_path, class: "linkText" %>
+            </li>
+            <li class="liOption">
+                <%= link_to "Contact", home_contact_path, class: "linkText" %>
+            </li>
+        </ul>
+        <ul class="devise">
+            <% if current_user %>
+            <li class="liOption">
+                <%= link_to "Sign Out", destroy_user_session_path, 'data-turbo-method': :delete, class: "linkDevise" %>
+            </li>
+            <li class="liOption">
+                <%= link_to "Edit Profile", edit_user_registration_path, class: "linkDevise" %>
+            </li>
+            <li class="liOption">
+                <%= link_to "Posts", posts_path, class: "linkDevise" %>
+            </li>
+            <% else %>
+            <li class="liOption">
+                <%= link_to "Sign in", new_user_registration_path, class:"linkDevise" %>
+            </li>
+
+            <li class="liOption">
+                <%= link_to "Login", new_user_session_path, class:"linkDevise" %>
+            </li>
+            <% end %>
+        </ul>
+        <ul class="secondaryMenu">            
+            <%= link_to "https://github.com/Jorge-Ortiz-Mata", target: :_blank, :class => '' do %>
+                <li class="liOption">
+                    <i class="fab fa-github"></i>
+                </li>
+            <% end %>
+            <%= link_to "https://www.linkedin.com/in/jorge-ortiz-ab1b18183/", target: :_blank, :class => '' do %>
+                <li class="liOption">
+                    <i class="fab fa-linkedin"></i>
+                </li>
+            <% end %>
+        </ul>
+    </nav>
+</header>

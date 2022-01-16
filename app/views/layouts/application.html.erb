@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SocialMedia</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="./assets/site-icon.png">
+    <script src="https://kit.fontawesome.com/44dff2d0d8.js" crossorigin="anonymous"></script>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+
+    <%= render 'home/header' %>
+    <% if notice %>
+		<%= render 'layouts/alert' %>
+		<% end %>
+    <%= yield %>
+    <%= render 'home/footer' %>
+
+  </body>
+</html>

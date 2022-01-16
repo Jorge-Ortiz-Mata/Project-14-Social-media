@@ -1,0 +1,1076 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+/* ------------------- HTML ------------------------*/
+
+html{
+    scroll-behavior: smooth;
+}
+/* ------------------- NAV BAR ------------------------*/
+
+.header{
+    background-color: #000000;
+}
+
+/* ------------------- BODY ------------------------*/
+
+body{
+    background-color: #003d4e;
+}
+
+
+/* ------------------- NAV BAR ------------------------*/
+
+.navbar{
+    display: flex;
+    height: 50px;
+}
+
+.primaryMenu{
+    display: flex;
+    list-style: none;
+    margin: auto auto auto 30px;
+    padding: 5px;
+}
+
+.linkText{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin: auto auto auto 20px;
+}
+
+.devise{
+    list-style: none;
+    display: flex;
+    margin: auto 10px auto auto;
+}
+
+.linkDevise{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
+    margin: auto 30px auto auto;
+}
+
+.secondaryMenu{
+    display: flex;
+    list-style: none;
+    margin: auto 60px auto 0px;
+    padding: 5px;
+}
+
+.liOption i{
+    margin: auto 10px auto auto;
+    color: #ffffff;
+    zoom: 140%;
+}
+
+.noticeAlert{
+    color: #ff0000;
+}
+
+/* -------------- FIRST SECTION ----------------- */
+
+.firstSection{
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("cars.jpg");
+    background-blend-mode: soft-light;
+    background-color: #00000099;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titleFirst{
+    margin: auto auto 20px auto;
+    font-size: 90px;
+}
+
+.descriptionFirst{
+    margin: 20px auto auto auto;
+    font-size: 40px;
+}
+
+/* -------------- SECOND SECTION ----------------- */
+
+.secondSection{
+    padding: 100px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.secondTitle{
+    font-size: 45px;
+    margin: 0px auto auto auto;
+    color: #000000;
+}
+
+.secondSection div{
+    display: flex;
+    flex-direction: row;
+}
+
+.textsSecond{
+    width: 650px;
+    margin: auto auto auto auto;
+    line-height: 30px;
+    color: #000000;
+}
+
+.imagesSecond{
+    background-image: url("why-us.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto auto auto auto;
+    width: 500px;
+    height: 400px;
+    position: relative;
+    animation-name: imagesSecond;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes imagesSecond {
+    0% {
+        top: 0px;
+    }
+    25% {
+        top: 30px;
+    }
+    75% {
+        top: -30px;
+    }
+    100% {
+        top: 0px;
+    }    
+}
+
+/* -------------- THIRD SECTION ----------------- */
+
+.thirdSection{
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+.thirdSection h3{
+    color: #003d4e;
+    font-size: 45px;
+    margin: auto auto 10px auto;
+}
+
+.thirdDescription{
+    color: #003d4e;
+    margin: 10px auto 20px auto;
+    width: 900px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.thirdBoxes{
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto auto auto;
+}
+
+.box{
+    box-shadow: 0px 0px 8px 4px #959393;
+    margin: 50px 40px auto 40px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.box:hover{
+    animation-name: box;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes box {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.boxTitle, .boxText{
+    color: #003d4e;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* -------------- FOURTH SECTION ----------------- */
+
+.fourthSection{
+    height: 400px;
+    background-image: url("ccars-2jsd.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    background-color: #000000a8;
+    display: flex;
+}
+
+.callActionSection{
+    margin: auto 50px auto auto;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fourthTitle{
+    font-size: 30px;
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+
+.fourthText{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.callToAction{
+    margin: auto auto auto 200px;
+}
+
+.callActionButton{
+    padding: 20px;
+    border-radius: 40px;
+    border: 4px solid #ffffff;
+    box-shadow: 0px 0px 3px 1px #ffffff;
+    background: transparent;
+    font-size: 18px;
+}
+
+.callActionButton:hover{
+    color: #ffffff;
+    background-color: #003d4e;
+}
+
+/* -------------- FIFTH SECTION ----------------- */
+
+.fifthSection{
+    height: 850px;
+    background-color: #e9e9e9;
+    display: flex;
+    flex-direction: column;
+    color: #003d4e;
+}
+
+.fifthTitle {
+    margin: auto auto 0px auto;
+    font-size: 40px;
+    color: #003d4e;
+}
+
+.fifthObjects{
+    margin: 30px auto auto auto;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.priceBox {
+    margin: 10px 50px auto 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 300px;
+    box-shadow: 0px 0px 8px 4px #c6c6c6;
+    border-radius: 10px;
+    color: #003d4e;
+}
+
+.fifthSubtitle {
+    margin: 10px auto 10px auto;
+    font-size: 20px;
+    font-weight: 700;
+    color: #003d4e;
+}
+
+.fifthprice {
+    margin: 20px auto 20px auto;
+    font-size: 35px;
+    font-weight: 700;
+    color: #003d4e;
+}
+
+.fifthList {
+    margin: 10px auto auto auto;
+    list-style: none;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing:1px;
+    color: #003d4e;
+}
+
+.fifthList li{
+    color: #003d4e;
+}
+
+.buySection{
+    margin: auto auto 20px auto;
+}
+
+.buyButton{
+    border: 0px;
+    color: #003d4e;
+    font-size: 15px;
+    width: 180px;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #e1f8ff;
+    box-shadow: 0px 0px 4px 2px #919191;
+}
+
+.buyButton:hover{
+    color: #ffffff;
+    background-color: #003d4e;
+}
+
+/* -------------- SIXTH SECTION ----------------- */
+
+.sixthSection{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-color: #ffffff;
+}
+
+.sixthSection h3{
+    margin: auto auto 10px auto;
+    font-size: 45px;
+    color: #003d4e;
+}
+
+.sixthSection p{
+    margin: 10px auto auto auto;
+    width: 1100px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 25px;
+    text-align: center;
+    color: #003d4e;
+}
+
+/* -------------- SIGN UP, LOGIN PAGES ---------------- */
+
+.sectionSignUp, .sectionLogin{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    background-color: #ffffff;
+}
+
+.titleSignUp, .titleLogin{
+    margin: auto auto 20px auto;
+    font-size: 50px;
+    font-weight: 700;
+    color: #003d4e;
+}
+
+.formSignUp, .formLogin{
+    margin: 20px auto auto auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 40px;
+    height: 500px;
+    width: 400px;
+    box-shadow: 0px 0px 15px 8px #a2a2a2;
+    background-color: #f1feffc1;
+    color: #003d4e;
+}
+
+.fieldNewRegistraion{
+    margin: 2px;
+}
+
+.labelSignUp, .labelLogin{
+    margin: 40px auto 20px auto;
+    font-size: 25px;
+    font-weight: 700;
+    color: #003d4e;
+}
+
+.fieldSignUp, .fieldLogin{
+    border: 1px solid #003d4e;
+    margin: 20px auto 40px auto;
+    color: #003d4e;
+    font-weight: 700;
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.minimumPass{
+    color: #003d4e;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.actionsSubmitButton{
+    text-align: center;
+    margin: 50px auto auto auto;
+}
+
+.submitButton{
+    color: #003d4e;
+    background-color: #ffffff;
+    border: 2px solid #003d4e;
+    border-radius: 20px;
+    width: 150px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0px 0px 15px 8px #b0d5e0;
+}
+
+.submitButton:hover{
+    color: #ffffff;
+    background-color: #003d4e;
+}
+
+.rememberMeCheckBox{
+    border: 1px solid #003d4e;
+}
+
+.rememberMeLabel{
+    color: #003d4e;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.actionsSubmitButtonLogin{
+    text-align: center;
+    margin: 80px auto auto auto;
+}
+
+/* -------------- EDIT PROFILE PAGE ---------------- */
+
+
+.sectionEdit{
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    background-color: #ffffff;
+}
+
+.rightSectionEdit{
+    margin: auto auto auto auto;
+}
+
+.leftSectionEdit{
+    margin: auto auto auto auto;
+}
+
+.titleEdit{
+    margin: auto auto 20px auto;
+    font-size: 50px;
+    font-weight: 700;
+    color: #003d4e;
+    text-align: center;
+}
+
+.formEdit{
+    margin: 10px auto auto auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 40px;
+    height: 500px;
+    width: 400px;
+    box-shadow: 0px 0px 15px 8px #a2a2a2;
+    background-color: #f1feffc1;
+    color: #003d4e;
+}
+
+.labelEdit{
+    margin: 20px auto 10px auto;
+    font-size: 25px;
+    font-weight: 700;
+    color: #003d4e;
+}
+
+.fieldEdit{
+    border: 1px solid #003d4e;
+    margin: 10px auto 20px auto;
+    color: #003d4e;
+    font-weight: 700;
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.actionsSubmitButtonEdit{
+    text-align: center;
+    margin: 10px auto auto auto;
+}
+
+.cancelAccountSection{
+    border: 1px solid #c1c1c1;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: 0px 0px 15px 8px #d8d8d8;
+    border-radius: 20px;
+    height: 300px;
+}
+
+.cancelTitle{
+    border: 1px solid #c1c1c1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #a70505;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.cancelButtonSection{
+        margin: 20px auto auto 20px;
+}
+
+.cancelButton{
+    color: #a70505;
+    background-color: #ffffff;
+    border: 2px solid #a70505;
+    border-radius: 20px;
+    width: 200px;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 0px 0px 15px 8px #b0d5e0;
+}
+
+.cancelButton:hover{
+    color: #ffffff;
+    background-color: #a70505;
+}
+
+.backButton{
+    color: #003d4e;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0px 0px 15px 8px #b0d5e0;
+    border: 2px solid #003d4e;
+    margin: auto auto auto 20px;
+    border-radius: 20px;
+    width: 75px;
+    text-align: center;
+}
+
+.backButton:hover{
+    color: #ffffff;
+    background-color: #003d4e;
+}
+
+.newButtonPost{
+    color: #00853c;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0px 0px 15px 8px #b0d5e0;
+    border: 2px solid #00853c;
+    margin: auto auto auto 20px;
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+.newButtonPost:hover{
+    color: #ffffff;
+    background-color: #00853c;
+}
+
+/* -------------- ABOUT PAGE ---------------- */
+
+.aboutPage{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("about-site.jpg");
+    background-blend-mode: soft-light;
+    background-color: #00000099;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.aboutTitle{
+    margin: auto auto 20px auto;
+    font-size: 50px;
+}
+
+.aboutText{
+    margin: 0px auto auto auto;
+    font-size: 30px;
+}
+
+/*------*/
+
+.aboutFirstSection{
+    height: 500px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutFirstTitle{
+    color: #003d4e;
+    margin: auto auto 20px auto;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.textFirstTitle{
+    color: #003d4e;
+    margin: 0px auto auto auto;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    width: 700px;
+}
+
+/* -------------- CONTACT PAGE ---------------- */
+
+.contactPage{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("contact-site.jpg");
+    background-blend-mode: soft-light;
+    background-color: #00000099;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contactTitle {
+    margin: auto auto 20px auto;
+    font-size: 50px;
+}
+
+.contactText{
+    margin: 0px auto auto auto;
+    font-size: 30px;
+}
+
+/* --------- */
+
+.contactFirstSection{
+    height: 500px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactFirstTitle{
+    color: #003d4e;
+    margin: auto auto 20px auto;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.contacTextFirstSection{
+    color: #003d4e;
+    margin: 0px auto auto auto;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    width: 700px;
+}
+
+/* -------------- POST PAGE ---------------- */
+
+.postPage{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("news.jpg");
+    background-blend-mode: soft-light;
+    background-color: #00000099;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.postSection{
+    height: 500px;
+    background-color: #ffffff;
+}
+
+.postMainTitle{
+    margin: auto auto 20px auto;
+    font-size: 50px;
+}
+
+.postText1{
+    margin: 0px auto 10px auto;
+    font-size: 30px;
+}
+
+.postText2{
+    margin: 0px auto auto auto;
+    font-size: 26px;
+    width: 600px;
+    text-align: center;
+}
+
+.postSection{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- Single Post Card --------- */
+
+.postCard{
+    display: flex;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 4px #c1bfbf;
+    margin: 100px auto 100px auto;
+    padding: 40px;
+    width: 800px;
+}
+
+.postCard:hover{
+    animation-name: postCard;
+    animation-fill-mode: forwards;
+    animation-duration: .5s;
+}
+
+@keyframes postCard {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.02);
+    }
+}
+
+.singlePostTitle{
+    margin: auto auto 0px 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #003d4e;
+}
+
+.singlePostDescription{
+    margin: 10px auto 0px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #003d4e;
+}
+
+.singlePostAuthor{
+    margin: 10px auto 0px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #003d4e;
+}
+
+.showButtonSection{
+    margin: 30px auto auto 20px;
+}
+
+.showSinglePostLink{
+    border: 0px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px #d1d1d1;
+    color: #003d4e;
+    padding: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.showSinglePostLink:hover{
+    background-color: #003d4e;
+    color: #ffffff;
+}
+
+/* -------------- NEW POST PAGE ---------------- */
+.newPostPage{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("share.jpg");
+    background-blend-mode: soft-light;
+    background-color: #00000099;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.newPostPageTitle{
+    margin: auto auto 20px auto;
+    font-size: 50px;
+}
+
+.newPostPageDescription{
+    margin: 0px auto 10px auto;
+    font-size: 30px;
+}
+
+.newPostPageUrl{
+    margin: 0px auto auto auto;
+    font-size: 26px;
+    width: 600px;
+    text-align: center;
+}
+
+/* ------------- */
+
+.newPostPageFirst{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.newPostPageFirst h3{
+    margin: 50px auto auto auto;
+    font-size: 40px;
+    font-weight: 700;
+    color: #003d4e;
+}
+
+.newPostForm{
+    margin: 30px auto 50px auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px #a3e0e4;
+}
+
+.postFormSection{
+    margin: 20px auto auto 10px;
+}
+
+.newPostLabel{
+    font-size: 25px;
+    font-weight: 600;
+    color: #003d4e;
+}
+
+.newPostField{
+    color: #003d4e;
+    padding: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.newPostFieldDescription{
+    color: #003d4e;
+    padding: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 520px;
+    height: 150px;
+}
+
+.backButton{
+    color: #575757;
+    background-color: #ffffff;
+    border: 2px solid #575757;
+    border-radius: 20px;
+    width: 120px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0px 0px 15px 8px #b0d5e0;
+}
+
+.backButton:hover{
+    color: #ffffff;
+    background-color: #575757;
+}
+
+/* -------------- SHOW PAGE. ---------------- */
+
+.showPage{
+    height: 200px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.showPage h2{
+    margin: 100px auto auto auto;
+    color: #003d4e;
+    text-align: center;
+    font-size: 50px;
+}
+
+.showCardPost{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto auto auto;
+    height: 700px;
+}
+
+.showCardPost .post{
+    padding: 0px;
+}
+
+/* ----- Buttons ------ */
+
+.showButtons{
+    margin: 10px auto auto auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.editPostButton{
+    color: #003d4e;
+    background-color: #f0fcff;
+    border: 2px solid #003d4e;
+    border-radius: 20px;
+    width: 100px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0px 0px 15px 8px #bcced3;
+    margin: auto 20px auto 20px;
+}
+
+.editPostButton:hover{
+    color: #f0fcff;
+    background-color: #003d4e;
+}
+
+.backToPostButton{
+    color: #000000;
+    background-color: #e7e7e7;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    width: 100px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0px 0px 15px 8px #cecece;
+    margin: auto 20px auto 20px;
+}
+
+.backToPostButton:hover{
+    color: #f0fcff;
+    background-color: #000000;
+}
+
+.deletePostButton{
+    color: #a70505;
+    background-color: #ffffff;
+    border: 2px solid #a70505;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0px 0px 15px 8px #f7d5d5;
+    margin: auto 20px auto 20px;
+}
+
+.deletePostButton:hover{
+    color: #f0fcff;
+    background-color: #a70505;
+}
+
+/* -------------- NOTICE ALERT. ---------------- */
+
+.noticeAlert{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 75px;
+}
+
+.noticeAlert div{
+    border-radius: 10px;
+    background-color: #e7fffd;
+    box-shadow: 0px 0px 8px 4px #bbbbbb;
+    color: #003d4e;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    width: 700px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -------------- EDIT PAGE. ---------------- */
+
+.editPage{
+    background-color: #ffffff;
+}
+
+/* -------------- FOOTER SECTION ---------------- */
+
+.footerSection {
+    height: 80px;
+    display: flex;
+    background-color: #001820;
+}
+
+.footerText {
+    margin: auto;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #001820;
+}

@@ -1,0 +1,19 @@
+<section class="postCard">
+  <div id="<%= dom_id post %>">
+    <p class="singlePostTitle">
+      <%= post.title %>
+    </p>
+
+    <p class="singlePostDescription">
+      <%= post.description %>
+    </p>
+
+    <p class="singlePostAuthor">
+      <%= post.author %>
+    </p>
+
+    <p class="showButtonSection">
+      <%= link_to "Show this post", post, class: "showSinglePostLink" %>
+    </p>
+  </div>
+</section>

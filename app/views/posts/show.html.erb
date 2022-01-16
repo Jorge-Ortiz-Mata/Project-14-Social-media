@@ -1,0 +1,13 @@
+<section class="showPage"> 
+  <h2>Post info.</h2> 
+</section>
+<section class="showCardPost">
+  <div class="post">
+    <%= render @post %>
+  </div>
+  <div class="showButtons">
+      <%= link_to "Edit post", edit_post_path(@post), class: "editPostButton" %> | 
+      <%= link_to "Back", posts_path, class: "backToPostButton" %>
+      <%= button_to "Delete Post", @post, method: :delete, class: "deletePostButton" %>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+<section class="postPage">
+  <h1 class="postMainTitle">News</h1>
+  <p class="postText1">cars.com</p>
+  <p class="postText2">
+    In this section you will find a lot of posts
+    that many users from all over the world share daily.
+  </p>
+</section>
+<section class="postSection">
+  <div id="posts">
+    <% @posts.each do |post| %>
+      <%= render post %>
+    <% end %>
+  </div>
+</section>
